@@ -1,4 +1,4 @@
-#⌨️Urchin ZMK Config
+# ⌨️Urchin ZMK Config
 This is my ZMK config for [Urchin Keyboard](https://github.com/duckyb/urchin).
 
 >[!WARNING]
