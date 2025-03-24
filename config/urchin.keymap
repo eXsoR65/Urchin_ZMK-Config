@@ -59,12 +59,6 @@
 
 	combos {
     compatible = "zmk,combos";
-    
-    fn_mo {
-	      timeout-ms = <50>;
-        key-positions = <31 32>; 
-        bindings = <&mo FUN>;
-    };
 
     ParaLeft {
         bindings = <&kp LEFT_PARENTHESIS>;
@@ -107,6 +101,14 @@
     };
   };
 
+  cond_layers {
+      compatible = "zmk,conditional-layers";
+      // Define FUN layer as tri-state
+      func_tristate {
+          if-layers = <NAV SMN>;
+          then-layer = <FUN>;
+      };
+  };
 
 
 	keymap {
