@@ -47,69 +47,67 @@
 
 / {
 	behaviors {
-    Shift_Enter: Shift_Enter {
-        compatible = "zmk,behavior-hold-tap";
-        display-name = "SHIFT_ENTER";
-        bindings = <&kp>, <&kp>;
-        #binding-cells = <2>;
-        hold-trigger-key-positions = <33>;
-        tapping-term-ms = <150>;
-    };
+    	Shift_Enter: Shift_Enter {
+        	compatible = "zmk,behavior-hold-tap";
+       		display-name = "SHIFT_ENTER";
+        	bindings = <&kp>, <&kp>;
+        	#binding-cells = <2>;
+        	hold-trigger-key-positions = <33>;
+        	tapping-term-ms = <150>;
+    	};
 	};
 
 	combos {
     compatible = "zmk,combos";
 
-    ParaLeft {
-        bindings = <&kp LEFT_PARENTHESIS>;
-        key-positions = <3 13>;
-    };
+    	ParaLeft {
+        	bindings = <&kp LEFT_PARENTHESIS>;
+        	key-positions = <3 13>;
+    	};
 
-    ParaRight {
-        bindings = <&kp RIGHT_PARENTHESIS>;
-        key-positions = <6 16>;
-    };
+    	ParaRight {
+       		bindings = <&kp RIGHT_PARENTHESIS>;
+    		key-positions = <6 16>;
+    	};
 
-    BrakLeft {
-        bindings = <&kp LEFT_BRACKET>;
-        key-positions = <2 12>;
-    };
+    	BrakLeft {
+        	bindings = <&kp LEFT_BRACKET>;
+        	key-positions = <2 12>;
+    	};
 
-    BrakRight {
-        bindings = <&kp RIGHT_BRACKET>;
-        key-positions = <7 17>;
-    };
+    	BrakRight {
+        	bindings = <&kp RIGHT_BRACKET>;
+    		key-positions = <7 17>;
+   		};
 
-    BraceLeft {
-        bindings = <&kp LEFT_BRACE>;
-        key-positions = <1 11>;
-    };
+    	BraceLeft {
+        	bindings = <&kp LEFT_BRACE>;
+        	key-positions = <1 11>;
+    	};
 
-    BraceRight {
-        bindings = <&kp RIGHT_BRACE>;
-        key-positions = <8 18>;
-    };
+    	BraceRight {
+    		bindings = <&kp RIGHT_BRACE>;
+        	key-positions = <8 18>;
+    	};
 
-    Delete {
-        bindings = <&kp DEL>;
-        key-positions = <7 8>;
-    };
+    	Delete {
+        	bindings = <&kp DEL>;
+        	key-positions = <7 8>;
+    	};
 
-    CapsWord {
-        bindings = <&caps_word>;
-        key-positions = <14 15>;
-    };
-  };
+    	CapsWord {
+        	bindings = <&caps_word>;
+        	key-positions = <14 15>;
+    	};
+ 	};
 
-  conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+   	conditional_layers {
+    	compatible = "zmk,conditional-layers";
+    	tri_layer {
+        	if-layers = <1 2>;
+        	then-layer = <3>;
         };
     };
-  };
-
 
 	keymap {
 		compatible = "zmk,keymap";
