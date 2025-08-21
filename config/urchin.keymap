@@ -101,13 +101,13 @@
     };
   };
 
-  cond_layers {
-      compatible = "zmk,conditional-layers";
-      // Define FUN layer as tri-state
-      func_tristate {
-          if-layers = <NAV SMN>;
-          then-layer = <FUN>;
-      };
+  conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
   };
 
 
