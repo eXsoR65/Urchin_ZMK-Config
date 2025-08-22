@@ -68,7 +68,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - BSPC
+  - {t: ▽, type: trans}
   - LSHFT
   SNM:
   - '{'
@@ -102,7 +102,7 @@ layers:
   - '3'
   - \
   - )
-  - _
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   FUN:
